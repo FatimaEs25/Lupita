@@ -42,7 +42,7 @@ window.onscroll = () => {
 
 // Redirigir a WhatsApp
 function confirmAttendance() {
-  const phoneNumber = "+524921316264"; // Número de teléfono con código internacional
+  const phoneNumber = "+524921316274"; // Número de teléfono con código internacional
   const message = "¡Hola! Confirmo mi asistencia a la fiesta de Lupita.";
   window.location.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 }
