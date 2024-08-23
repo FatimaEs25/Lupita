@@ -13,7 +13,7 @@ body {
 /* Sección fija al inicio con fondo */
 .hero-section {
   height: 50vh;
-  background: url('/images/lupita.jpg') center/cover no-repeat;
+  background: url('lupita.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
