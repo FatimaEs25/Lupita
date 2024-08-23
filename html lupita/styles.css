@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* Sección fija al inicio con fondo */
+.hero-section {
+  height: 50vh;
+  background: url('/images/lupita.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+/* Estilos del título principal */
+.hero-section h1 {
+  font-size: 5em;
+  margin: 0.2em;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  font-family: 'Dancing Script', cursive;
+}
+
+.hero-section h2 {
+  font-size: 3em;
+  margin: 0.2em;
+  font-family: 'Dancing Script', cursive;
+}
+
+.invitation {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Imágenes que aparecen al hacer scroll */
+.hidden-image {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.visible-image {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilo para recuadros transparentes */
+.box {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para texto de fecha y lugar */
+.info-section p {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8em;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Estilo para el contador de tiempo */
+.countdown-section h2 {
+  font-size: 2.5em;
+  color: #f488be;
+  margin: 20px 0;
+}
+
+#countdown {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#countdown div {
+  font-size: 1.2em;
+  font-family: 'Lora', serif;
+  color: #f488be;
+}
+
+.info-section,
+.activities-section,
+.actions-section {
+  margin: 40px 0;
+}
+
+/* Botón de Confirmar Asistencia */
+.actions-section button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f488be;
+  color: white;
+  cursor: pointer;
+}
+
+.actions-section button:hover {
+  background-color: #f488be;
+}
+
+/* Botón circular rosa con icono de ubicación */
+.location-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.circle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f488be;
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+}
+
+.circle-button i {
+  font-size: 2em;
+}
+
+.circle-button:hover {
+  background-color: #f488be;
+}
+
+.location-button-container p {
+  margin-top: 10px;
+  font-family: 'Lora', serif;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Barra de progreso */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background-color: #ff66b2;
+  z-index: 100;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 600px) {
+  .hero-section h1 {
+    font-size: 3.5em;
+  }
+  .hero-section h2 {
+    font-size: 2.5em;
+  }
+}
+/* Imagen del botón de ubicación */
+.map-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.map-button img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f488be;
+  padding: 0px;
+}
+
+.map-button p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #f488be;
+}
+/* Botón de sonido */
+#sound-toggle {
+  background: none;
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+#sound-toggle img {
+  width: 30px;
+  height: 30px;
+}
+
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
