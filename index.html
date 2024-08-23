@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiesta de Cumpleaños de Lupita</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sección fija con fondo e información -->
+  <div class="hero-section">
+    <h1>LUPITA</h1>
+    <h2>Mis 20 años</h2>
+    
+    <!-- Botón de sonido -->
+    <button id="sound-toggle" onclick="toggleSound()">
+      <img id="sound-icon" src="/images/sonido.jpg" alt="Sonido">
+    </button>
+  </div>
+  
+  <!-- Audio de fondo -->
+  <audio id="background-audio" autoplay loop>
+    <source src="/images/disney.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <!-- Barra de progreso -->
+  <div id="progress-bar"></div>
+
+  <!-- Contenido de la invitación -->
+  <div class="invitation">
+    <!-- Imágenes que Aparecen al Hacer Scroll -->
+    <section class="image-section">
+      <img class="hidden-image" src="/images/acompañame.gif" alt="Decoración festiva">
+    </section>
+
+    <section class="info-section box">
+      <p>Jueves, 12 de septiembre a las 3:00 PM</p>
+      <p>Salón el Castillo, Hotel Don Miguel</p>
+    </section>
+
+    <!-- Secciones con contenido detallado en recuadros -->
+    <section class="image-section">
+      <img class="hidden-image" src="/images/princesas.gif" alt="Globos de colores">
+    </section>
+    
+    <!-- Contador -->
+    <div class="countdown-section box">
+      <h2>¡Faltan!</h2>
+      <div id="countdown">
+        <div><span id="days"></span><p>Días</p></div>
+        <div><span id="hours"></span><p>Hrs</p></div>
+        <div><span id="minutes"></span><p>Min</p></div>
+        <div><span id="seconds"></span><p>Seg</p></div>
+      </div>
+    </div>
+
+    <section class="image-section">
+      <img class="hidden-image" src="/images/esperamos.gif" alt="Mesa de dulces">
+    </section>
+
+    <!-- Sección de Confirmación -->
+<section class="actions-section box">
+  <button class="whatsapp-btn" onclick="confirmAttendance()">Confirmar Asistencia</button>
+
+  <!-- Imagen con ícono de ubicación -->
+ 
+    <div class="map-button">
+      <img src="/images/comollegar.jpg" alt="Ubicación" onclick="openMap()" />
+    </div>
+    
+  </div>
+</section>
+
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- CDN para iconos de FontAwesome -->
+  <script src="scripts.js"></script>
+</body>
+</html>
